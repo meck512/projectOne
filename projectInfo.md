@@ -1,3 +1,5 @@
+https://www.w3schools.com/jquery/jquery_syntax.asp
+
 Your project should fulfill the following requirements:
 
 Use a CSS framework other than Bootstrap.
