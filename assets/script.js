@@ -33,40 +33,14 @@ function artistCards() {
                 <a href="#">Get Tickets</a>
                 <a href="#">Book Flight</a>
                 </div>`
-
             }
 
         });
 };
+
 artistCards()
 
 
-
-
-
-
-
-
-
-
-
-
-// $.ajax({
-//     type:"GET",
-//     url:"https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&keyword=Luke%20Combs&locale=*&size=5",
-//     async:true,
-//     dataType: "json",
-//     success: function(json) {
-//                 console.log(json);
-//                 // Parse the response.
-//                 // Do other things.
-//              },
-//     error: function(xhr, status, err) {
-//                 // This time, we do not end up here!
-//              }
-//   });
-
-
-//   $(document).ready(function(){
-//     $('.carousel').carousel();
-//   });
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });

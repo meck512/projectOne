@@ -1,4 +1,22 @@
+body {
+    background-color: #424242;
+    font-family: 'Tourney', cursive;;
+}
+
 #feedContainer {
     overflow-x: auto;
     white-space: nowrap;
    }
+
+   .hero {
+    background-image: url('../assets/images/purpleConcert.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 100%;
+    padding: 10% 15% 25% 15%;
+
+  }
