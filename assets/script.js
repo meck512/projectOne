@@ -6,10 +6,10 @@ var artistSearchBtn = document.getElementById("artistSearch")
 // }
 
 
-// artistSearchBtn.addEventListener("click", function (event) {
-//     event.preventDefault()
-//     artistCards()
-// });
+artistSearchBtn.addEventListener("click", function (event) {
+    event.preventDefault()
+    artistCards()
+});
 
 
 // Hotels API
@@ -34,15 +34,14 @@ function getHotels(cityName) {
 
 };
 
-
 function artistCards() {
     document.getElementById("cardBox").innerHTML = "";
     fetch("https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&keyword=" + userInput.value.trim() + "&locale=*&size=5")
         .then(function (response) {
             return response.json()
         }).then(function (data) {
-            artistHistory.push(data._embedded.events[0].images[4].url)
-            localStorage.setItem("history", JSON.stringify(artistHistory))
+            // artistHistory.push(data._embedded.events[0].images[4].url)
+            // localStorage.setItem("history", JSON.stringify(artistHistory))
 
             console.log(data)
             for (i = 0; i < data._embedded.events.length; i++) {
@@ -53,19 +52,21 @@ function artistCards() {
                 let date = concert.dates.start.localDate
                 let venue = concert._embedded.venues[0].name
                 let city = concert._embedded.venues[0].city.name
+                let address = concert._embedded.venues[0].address.line1
+                let state = concert._embedded.venues[0].state.name
                 getHotels(city).then(function (hotels) {
                     console.log(hotels)
                     console.log(venue, city, artistImg, date)
                     var suggestion = hotels[0].name
                     var card = document.createElement("div")
-                    var ticketUrl = concert.url
+                    let ticketUrl = concert.url
                     card.classList="card black center-align"
                     card.innerHTML = `<div class="card-content white-text">
-    <span class="card-title">`+ city + `</span>
-    <p>Date: `+ date + `</p>
-    <p>Venue: `+ venue + `</p>
-    <p>City: `+ city + `</p>
-    <p>Hotel: `+ suggestion + `</p>
+    <span class="card-title">`+ city + `, `+ state +`</span>
+    <p>`+ date + `</p>
+    <p>`+ venue + `</p>
+    <p>`+ address +`</p>
+    <p>Need a Hotel?  `+ suggestion + `</>
     </div>
     <div class="card-action">
     <a href="`+ticketUrl+`">Get Tickets</a>
@@ -77,4 +78,7 @@ function artistCards() {
 };
 // Stringify/parse for local storage
 
-// $(document).ready(function () {
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });

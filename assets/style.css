@@ -1,6 +1,9 @@
+*{
+  color: #d8c9a9!important;
+}
+
 body {
     background-color: #212121   ;
-
 }
 
 .brand-logo{
@@ -20,16 +23,13 @@ body {
 
   }
 
-  #userInputBox {
-    background-color: black;
-  }
-
   .container {
     align-content: center;
+    text-align: center;
   }
 
 .btn-large{
-    background-color: #d8c9a9!important ;
+    background-color: black!important ;
 }
 
 /* INPUT Color */
