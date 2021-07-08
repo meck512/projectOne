@@ -52,23 +52,20 @@ function artistCards() {
                     console.log(venue, city, artistImg, date)
                     var suggestion = hotels[0].name
                     var card = document.createElement("div")
-                    card.classList="card blue-grey darken-1"
+                    card.classList="card black center-align"
                     card.innerHTML = `<div class="card-content white-text">
     <span class="card-title">`+city+`</span>
-    <p>Date:`+date+`</p>
-    <p>Venue:`+venue+`</p>
-    <p>City:`+city+`</p>
-    <p>Hotel:`+suggestion+`</p>
+    <p>Date: `+date+`</p>
+    <p>Venue: `+venue+`</p>
+    <p>City: `+city+`</p>
+    <p>Hotel: `+suggestion+`</p>
     </div>
     <div class="card-action">
     <a href="#">Get Tickets</a>
-    <a href="#">Book Flight</a>
     </div>`
                     document.getElementById("cardBox").appendChild(card)
                 })
-
             }
-
         });
 };
 // Stringify/parse for local storage

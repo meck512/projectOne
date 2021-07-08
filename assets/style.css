@@ -1,12 +1,11 @@
 body {
-    background-color: #424242;
-    font-family: 'Tourney', cursive;;
+    background-color: #212121   ;
+
 }
 
-#feedContainer {
-    overflow-x: auto;
-    white-space: nowrap;
-   }
+.brand-logo{
+    font-family: 'Tourney', cursive;
+}
 
    .hero {
     background-image: url('../assets/images/purpleConcert.jpg');
@@ -20,3 +19,31 @@ body {
     padding: 10% 15% 25% 15%;
 
   }
+
+  #userInputBox {
+    background-color: black;
+  }
+
+  .container {
+    align-content: center;
+  }
+
+.btn-large{
+    background-color: #d8c9a9!important ;
+}
+
+/* INPUT Color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+    color: #d8c9a9 !important;
+   }
+
+   .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #d8c9a9 !important;
+    box-shadow: 0 1px 0 0 #d8c9a9 !important;
+   }
+
+.instructions{
+    color: #d8c9a9;
+    text-align: center;
+}
+
