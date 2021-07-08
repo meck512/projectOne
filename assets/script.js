@@ -3,13 +3,13 @@ var artistSearchBtn = document.getElementById("artistSearch")
 // var artistHistory = []
 // if(localStorage.getItem("history")){
 //     artistHistory = JSON.parse(localStorage.getItem("history"))
-}
+// }
 
 
 // artistSearchBtn.addEventListener("click", function (event) {
 //     event.preventDefault()
 //     artistCards()
-});
+// });
 
 
 // Hotels API
@@ -77,4 +77,4 @@ function artistCards() {
 };
 // Stringify/parse for local storage
 
-$(document).ready(function () {
+// $(document).ready(function () {
