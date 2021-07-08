@@ -37,6 +37,9 @@ body {
     color: #d8c9a9 !important;
    }
 
+   .search{
+    color: #d8c9a9 !important;
+   }
    .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #d8c9a9 !important;
     box-shadow: 0 1px 0 0 #d8c9a9 !important;
@@ -47,3 +50,6 @@ body {
     text-align: center;
 }
 
+.hero-cta{
+    color: #d8c9a9;
+}

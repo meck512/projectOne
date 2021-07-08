@@ -57,8 +57,7 @@ function artistCards() {
     <span class="card-title">`+city+`</span>
     <p>Date: `+date+`</p>
     <p>Venue: `+venue+`</p>
-    <p>City: `+city+`</p>
-    <p>Hotel: `+suggestion+`</p>
+    <p>Need a Hotel? `+suggestion+`</p>
     </div>
     <div class="card-action">
     <a href="#">Get Tickets</a>
