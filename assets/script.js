@@ -52,6 +52,7 @@ function artistCards() {
                     console.log(venue, city, artistImg, date)
                     var suggestion = hotels[0].name
                     var card = document.createElement("div")
+                    var ticketUrl = concert.url
                     card.classList="card black center-align"
                     card.innerHTML = `<div class="card-content white-text">
     <span class="card-title">`+city+`</span>
@@ -60,7 +61,7 @@ function artistCards() {
     <p>Need a Hotel? `+suggestion+`</p>
     </div>
     <div class="card-action">
-    <a href="#">Get Tickets</a>
+    <a href="`+ticketUrl+`">Get Tickets</a>
     </div>`
                     document.getElementById("cardBox").appendChild(card)
                 })
