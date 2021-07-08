@@ -1,14 +1,14 @@
 var userInput = document.getElementById("search")
 var artistSearchBtn = document.getElementById("artistSearch")
-var artistHistory = []
-if(localStorage.getItem("history")){
-    artistHistory = JSON.parse(localStorage.getItem("history"))
+// var artistHistory = []
+// if(localStorage.getItem("history")){
+//     artistHistory = JSON.parse(localStorage.getItem("history"))
 }
 
 
-artistSearchBtn.addEventListener("click", function (event) {
-    event.preventDefault()
-    artistCards()
+// artistSearchBtn.addEventListener("click", function (event) {
+//     event.preventDefault()
+//     artistCards()
 });
 
 
